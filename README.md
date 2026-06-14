@@ -74,23 +74,20 @@ Session closed successfully.
 > Make sure Python 3 is installed on your system.
 
 ```bash
-git clone https://github.com/aqsaismail04/Decodelabs-Task-2-Aqsa-Ismail.git
+git clone https://github.com/aqsaismail04/Decodelab-Task-2-Aqsa-Ismail.git
 cd Decodelabs-Task-2-Aqsa-Ismail
 python main.py
 ```
 
 ---
-
-## 📂 Project Structure
-
-```
-Decodelabs-Task-2-Aqsa-Ismail/
+Decodelab-Task-2-Aqsa-Ismail/
 │
-├── main.py        # Main application file
+├── Expense-Tracker.py    # Main application file
+├── runtime.png           # Program screenshot
+├── LICENSE
 └── README.md
-```
-
 ---
+
 
 ## 🧠 Concepts Practiced
 
