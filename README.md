@@ -4,7 +4,7 @@
 ![Python](https://img.shields.io/badge/Python-3.x-yellow)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-A Python command-line Expense Tracker that accumulates expenses in real-time and displays the final total spent.
+A Python command-line Expense Tracker that accumulates real-time expense data and displays a complete financial summary.
 
 ---
 
@@ -12,19 +12,21 @@ A Python command-line Expense Tracker that accumulates expenses in real-time and
 
 Built as **Task 2** of my **DecodeLabs Internship (Batch 2026)**.
 
-DecodeLabs is a virtual internship program focused on building real-world Python skills through practical projects. This task focused on **data accumulation** — how financial software stores, updates, and processes numerical data continuously.
+DecodeLabs is a virtual internship program that trains students to think like real backend developers. Task 2 — *The Architecture of Financial Truth* — wasn't about simple arithmetic. It was about **Data Accumulation**: mastering how to store, update, and process numerical data in real-time using pure mathematical and programmatic logic.
 
-Enter your expenses one by one, and the program keeps a running total. Type `done` when finished to see your **Final Total Spent**.
+This project proves I can build a state-preserving backend engine that handles continuous data entry with absolute precision.
 
 ---
 
 ## 🚀 Features
 
-- 💸 Add multiple expense amounts one by one
-- 🔄 Shows running total after each entry
-- 🛡️ Handles invalid input gracefully (no crash on wrong data)
-- 🔢 Accumulator pattern — total updates in real-time
-- ✅ Clean exit with final total on typing `done`
+- 💸 Enter multiple expense amounts one by one
+- 🔄 Running total updates after every entry
+- ⚠️ Rejects invalid input — no crash on wrong data
+- 🚫 Rejects negative or zero amounts
+- 🔢 Tracks total number of transactions
+- 📊 Displays average expense in final summary
+- 🛑 Clean exit with `done` — prints full summary
 
 ---
 
@@ -34,24 +36,35 @@ Enter your expenses one by one, and the program keeps a running total. Type `don
 ====================================
        EXPENSE TRACKER APP
 ====================================
-Type 'done' to see your total expense
+Enter expense amounts one by one.
+Type 'done' when finished.
 ------------------------------------
 
 Enter expense amount (or 'done' to finish): 100
-✓ Expense added! Running Total: 100.00
+Expense added! Running Total: Rs 100.00
 
 Enter expense amount (or 'done' to finish): 50
-✓ Expense added! Running Total: 150.00
+Expense added! Running Total: Rs 150.00
 
 Enter expense amount (or 'done' to finish): 20
-✓ Expense added! Running Total: 170.00
+Expense added! Running Total: Rs 170.00
+
+Enter expense amount (or 'done' to finish): ten
+Invalid Data! Please enter numbers only.
+
+Enter expense amount (or 'done' to finish): -5
+Amount must be greater than 0!
 
 Enter expense amount (or 'done' to finish): done
 
 ====================================
-   FINAL TOTAL SPENT: 170.00
+        EXPENSE SUMMARY
 ====================================
-Thank you for using Expense Tracker!
+Total Transactions: 3
+Total Spent: Rs 170.00
+Average Expense: Rs 56.67
+====================================
+Session closed successfully.
 ```
 
 ---
@@ -81,11 +94,14 @@ Decodelabs-Task-2-Aqsa-Ismail/
 
 ## 🧠 Concepts Practiced
 
-- Accumulator Pattern (`total += expense`)
+- Accumulator Pattern (`total = total + expense`)
 - While Loop with Sentinel Value (`done` to exit)
 - Type Conversion (`float()` for decimal amounts)
+- Input Validation (negative/zero rejection)
 - Exception Handling (`try/except ValueError`)
-- Formatted Output (`:.2f` for 2 decimal places)
+- Transaction Counter
+- Average Calculation
+- Formatted Output (`:.2f` for precision)
 
 ---
 
@@ -93,11 +109,12 @@ Decodelabs-Task-2-Aqsa-Ismail/
 
 During this internship task, I gained hands-on experience with:
 
-- How real financial software processes and accumulates data in real-time
-- The importance of initializing accumulators **outside** the loop
-- Defensive coding — catching `ValueError` so invalid input doesn't crash the program
-- Using sentinel values (`done`) to gracefully exit a continuous loop
-- The difference between storing data as a string vs converting it to a number (`int` vs `float`)
+- The **Accumulator Pattern** — the heartbeat of every financial system
+- Why `total` must be initialized **outside** the loop to preserve state
+- **Defensive coding** — catching `ValueError` so invalid input never crashes the program
+- Using **sentinel values** (`done`) to gracefully shut down a continuous loop
+- The difference between holding data (storage) and processing it (computation)
+- How a simple `total += expense` scales to power real-world banking systems
 
 ---
 
