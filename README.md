@@ -1,4 +1,4 @@
-# Decodelabs-Task-2-Aqsa-Ismail
+# Decodelab-Task-2-Aqsa-Ismail
 
 ![DecodeLabs](https://img.shields.io/badge/DecodeLabs-Intern%202026-blue)
 ![Python](https://img.shields.io/badge/Python-3.x-yellow)
@@ -27,6 +27,12 @@ This project proves I can build a state-preserving backend engine that handles c
 - 🔢 Tracks total number of transactions
 - 📊 Displays average expense in final summary
 - 🛑 Clean exit with `done` — prints full summary
+
+---
+
+## 📸 Demo
+
+![Runtime](runtime.png)
 
 ---
 
@@ -75,19 +81,24 @@ Session closed successfully.
 
 ```bash
 git clone https://github.com/aqsaismail04/Decodelab-Task-2-Aqsa-Ismail.git
-cd Decodelabs-Task-2-Aqsa-Ismail
-python main.py
+cd Decodelab-Task-2-Aqsa-Ismail
+python Expense-Tracker.py
 ```
 
 ---
+
+## 📂 Project Structure
+
+```
 Decodelab-Task-2-Aqsa-Ismail/
 │
 ├── Expense-Tracker.py    # Main application file
 ├── runtime.png           # Program screenshot
 ├── LICENSE
 └── README.md
----
+```
 
+---
 
 ## 🧠 Concepts Practiced
 
